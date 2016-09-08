@@ -16,14 +16,13 @@
 		<!-- 此target執行前會執行setProperties 參照 depends屬性 -->
 		<!-- 編譯前，先建置編譯資料夾 -->
 		<mkdir dir="./TESTREPORT" />
+		<mkdir dir="./bin" />
 		<!-- 編譯前，把已存在的檔案刪除，並排外哪些不刪的程式 -->
-		<!--
 		<delete includeemptydirs="true">
-			<fileset dir="./WebContent/WEB-INF/classes">
+			<fileset dir="./bin">
 				<include name="**/*.class" />
 			</fileset>
 		</delete>
-		-->
 	</target>
 	<target name="Compiler" description="" depends="prepareDir">
 		<javac destdir="./bin" debug="true" includeantruntime="false" deprecation="false" optimize="false" failonerror="true" encoding="UTF-8">
