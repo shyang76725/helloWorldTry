@@ -1,5 +1,5 @@
 <!-- Project Name 可以自定議 -->
-<project name="HelloWorld" basedir="." >
+<project name="helloWorldTry" basedir="." >
 	<target name="setProperties">
 		<property environment="env" />
 		<property file="build.PROPERTIES" />
