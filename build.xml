@@ -18,11 +18,13 @@
 		<mkdir dir="./TESTREPORT" />
 		<mkdir dir="./bin" />
 		<!-- 編譯前，把已存在的檔案刪除，並排外哪些不刪的程式 -->
+		<!--jenkins 內建，故此段不需要
 		<delete includeemptydirs="true">
 			<fileset dir="./bin">
 				<include name="**/*.class" />
 			</fileset>
 		</delete>
+		-->
 	</target>
 	<target name="Compiler" description="" depends="prepareDir">
 		<javac destdir="./bin" debug="true" includeantruntime="false" deprecation="false" optimize="false" failonerror="true" encoding="UTF-8">
