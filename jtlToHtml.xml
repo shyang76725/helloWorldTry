@@ -1,0 +1,12 @@
+<!-- Project Name 可以自定議 -->
+<project name="helloWorldTry" basedir="." >
+	<target name="xslt-report" >
+	  <tstamp><format property="report.datestamp" pattern="yyyy/MM/dd HH:mm"/></tstamp>
+	  <xslt
+	      force="true"
+	      in="jmeterReport/helloGoogleResult.jtl"
+	      out="jmeterReport/elloGoogleResult.html"
+		  style="LIB/jmeter_template/jmeter-results-detail-report.xsl">
+	  </xslt>
+	</target>
+</project>
