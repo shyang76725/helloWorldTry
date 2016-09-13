@@ -5,7 +5,7 @@
 	  <xslt
 	      force="true"
 	      in="jmeterReport/helloGoogleResult.jtl"
-	      out="jmeterReport/elloGoogleResult.html"
+	      out="jmeterReport/helloGoogleResult.html"
 		  style="LIB/jmeter_template/jmeter-results-detail-report.xsl">
 	  </xslt>
 	</target>
