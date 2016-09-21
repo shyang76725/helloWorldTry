@@ -6,7 +6,7 @@
 	      force="true"
 	      in="jmeterReport/helloGoogleResult.jtl"
 	      out="jmeterReport/helloGoogleResult.html"
-		  style="LIB/jmeter_template/jmeter.results.shanhe.me.xsl">
+		  style="LIB/jmeter_template/jmeter-results-detail-report.xsl">
 	  </xslt>
 	</target>
 </project>
