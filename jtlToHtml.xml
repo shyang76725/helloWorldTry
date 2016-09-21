@@ -1,6 +1,12 @@
 <!-- Project Name 可以自定議 -->
 <project name="helloWorldTry" basedir="." >
 	<target name="xslt-report" >
+		<path id="jmeter.classpath">
+			<!-- 編譯過程當中，需參照的classpath -->
+				<fileset dir="./LIB">
+					 <include name="ant-jmeter*.jar"/>
+				</fileset>
+		</path>
 	  <tstamp><format property="report.datestamp" pattern="yyyy/MM/dd HH:mm"/></tstamp>
 	  <xslt
 	      force="true"
