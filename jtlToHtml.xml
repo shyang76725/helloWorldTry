@@ -15,7 +15,22 @@
 		<xslt
 			classpathref="xslt.classpath"
 			force="true" 
-			in="jmeterReport/helloGoogleResult_${env.BUILD_NUMBER}.jtl" 
+			in="jmeterReport/helloGoogleResult.jtl" 
+			out="jmeterReport/helloGoogleResult.html" 
+			style="LIB/jmeter_template/jmeter-results-detail-report.xsl">
+			<param name="dateReport" expression="${report.datestamp}"/>
+		</xslt>
+		<xslt
+			classpathref="xslt.classpath"
+			force="true" 
+			in="jmeterReport/helloGoogleResult.jtl" 
+			out="jmeterReport/helloGoogleResult_detail.html" 
+			style="LIB/jmeter_template/jmeter.results.shanhe.me.xsl">
+		</xslt>
+		<xslt
+			classpathref="xslt.classpath"
+			force="true" 
+			in="jmeterReport/helloGoogleResult.jtl" 
 			out="jmeterReport/helloGoogleResult_${env.BUILD_NUMBER}.html" 
 			style="LIB/jmeter_template/jmeter-results-detail-report.xsl">
 			<param name="dateReport" expression="${report.datestamp}"/>
@@ -23,7 +38,7 @@
 		<xslt
 			classpathref="xslt.classpath"
 			force="true" 
-			in="jmeterReport/helloGoogleResult_${env.BUILD_NUMBER}.jtl" 
+			in="jmeterReport/helloGoogleResult.jtl" 
 			out="jmeterReport/helloGoogleResult_detail_${env.BUILD_NUMBER}.html" 
 			style="LIB/jmeter_template/jmeter.results.shanhe.me.xsl">
 		</xslt>
