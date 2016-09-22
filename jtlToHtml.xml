@@ -18,6 +18,13 @@
 			force="true" 
 			in="jmeterReport/helloGoogleResult.jtl" 
 			out="jmeterReport/helloGoogleResult.html" 
+			style="LIB/jmeter_template/jmeter-results-detail-report.xsl">
+		</xslt>
+		<xslt
+			classpathref="xslt.classpath"
+			force="true" 
+			in="jmeterReport/helloGoogleResult.jtl" 
+			out="jmeterReport/helloGoogleResult_detail.html" 
 			style="LIB/jmeter_template/jmeter.results.shanhe.me.xsl">
 		</xslt>
 	</target>
