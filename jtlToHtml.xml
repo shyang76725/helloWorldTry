@@ -29,8 +29,8 @@
 		</xslt>
 		<copy todir="jmeterReport">
 			<fileset dir="LIB/jmeter_template">
-				<include name="collapse.png" />
-				<include name="expand.png" />
+				<include name="collapse.jpg" />
+				<include name="expand.jpg" />
 			</fileset>
 		</copy>
 	</target>
