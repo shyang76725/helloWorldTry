@@ -14,16 +14,16 @@
 		<xslt
 			classpathref="xslt.classpath"
 			force="true" 
-			in="jmeterReport/helloGoogleResult.jtl" 
-			out="jmeterReport/helloGoogleResult.html" 
+			in="jmeterReport/helloGoogleResult_${BUILD_NUMBER}.jtl" 
+			out="jmeterReport/helloGoogleResult_${BUILD_NUMBER}.html" 
 			style="LIB/jmeter_template/jmeter-results-detail-report.xsl">
 			<param name="dateReport" expression="${report.datestamp}"/>
 		</xslt>
 		<xslt
 			classpathref="xslt.classpath"
 			force="true" 
-			in="jmeterReport/helloGoogleResult.jtl" 
-			out="jmeterReport/helloGoogleResult_detail.html" 
+			in="jmeterReport/helloGoogleResult_${BUILD_NUMBER}.jtl" 
+			out="jmeterReport/helloGoogleResult_detail_${BUILD_NUMBER}.html" 
 			style="LIB/jmeter_template/jmeter.results.shanhe.me.xsl">
 		</xslt>
 		<copy todir="jmeterReport">
