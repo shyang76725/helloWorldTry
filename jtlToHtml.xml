@@ -1,18 +1,24 @@
 <!-- Project Name 可以自定議 -->
-<project name="helloWorldTry" basedir="." >
-	<target name="xslt-report" >
-		<path id="jmeter.classpath">
-			<!-- 編譯過程當中，需參照的classpath -->
-				<fileset dir="./LIB">
-					 <include name="ant-jmeter*.jar"/>
-				</fileset>
+<project name="helloWorldTry" basedir=".">
+	<target name="xslt-report">
+		 
+		<path id="xslt.classpath">
+			<fileset dir="./LIB">
+				<include name="xalan.jar" />
+				<include name="serializer.jar" />
+			</fileset>
 		</path>
-	  <tstamp><format property="report.datestamp" pattern="yyyy/MM/dd HH:mm"/></tstamp>
-	  <xslt
-	      force="true"
-	      in="jmeterReport/helloGoogleResult.jtl"
-	      out="jmeterReport/helloGoogleResult.html"
-		  style="LIB/jmeter_template/jmeter-results-detail-report.xsl">
-	  </xslt>
+	
+		<!--<property name="jmeter.save.saveservice.output_format" value="xml" />-->
+		<tstamp>
+			<format property="report.datestamp" pattern="yyyy/MM/dd HH:mm" />
+		</tstamp>
+		<xslt
+			classpathref="xslt.classpath"
+			force="true" 
+			in="jmeterReport/helloGoogleResult.jtl" 
+			out="jmeterReport/helloGoogleResult.html" 
+			style="LIB/jmeter_template/jmeter.results.shanhe.me.xsl">
+		</xslt>
 	</target>
 </project>
