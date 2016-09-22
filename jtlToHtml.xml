@@ -1,14 +1,12 @@
 <!-- Project Name 可以自定議 -->
 <project name="helloWorldTry" basedir=".">
+	<path id="xslt.classpath">
+		<fileset dir="LIB">
+			<include name="xalan.jar" />
+			<include name="serializer.jar" />
+		</fileset>
+	</path>
 	<target name="xslt-report">
-		 
-		<path id="xslt.classpath">
-			<fileset dir="./LIB">
-				<include name="xalan.jar" />
-				<include name="serializer.jar" />
-			</fileset>
-		</path>
-	
 		<!--<property name="jmeter.save.saveservice.output_format" value="xml" />-->
 		<tstamp>
 			<format property="report.datestamp" pattern="yyyy/MM/dd HH:mm" />
