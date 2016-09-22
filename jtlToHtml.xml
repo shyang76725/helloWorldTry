@@ -17,6 +17,7 @@
 			in="jmeterReport/helloGoogleResult.jtl" 
 			out="jmeterReport/helloGoogleResult.html" 
 			style="LIB/jmeter_template/jmeter-results-detail-report.xsl">
+			<param name="dateReport" expression="${report.datestamp}"/>
 		</xslt>
 		<xslt
 			classpathref="xslt.classpath"
