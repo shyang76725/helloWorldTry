@@ -28,7 +28,7 @@
 			style="LIB/jmeter_template/jmeter.results.shanhe.me.xsl">
 		</xslt>
 		<copy todir="jmeterReport">
-			<fileset dir="jmeter_template">
+			<fileset dir="LIB/jmeter_template">
 				<include name="collapse.png" />
 				<include name="expand.png" />
 			</fileset>
