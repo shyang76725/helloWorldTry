@@ -3,7 +3,7 @@
 	<target name="setProperties">
 		<property environment="env" />
 		<path id="classpath">
-				<fileset dir="./LIB">
+				<fileset dir="/usr/share/ant/lib/">
 					<include name="*.jar" />
 				</fileset>
 		</path>
