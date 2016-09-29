@@ -4,7 +4,6 @@
 			host="10.1.4.67" 
 			keyfile="~/OpenstackKey/shyang.pem"
 			username="ubuntu" 
-			password="${server.pwd}" 
 			command="hostname" 
 			/>  
 </project>
