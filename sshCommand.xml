@@ -7,7 +7,7 @@
 	<target name="scpTry">
 		<scp 
 			file="helloGoogle.jmx"
-			todir="ubuntu@10.1.4.67:/home"
+			todir="ubuntu@10.1.4.67:~"
 			keyfile="shyang.pem" 
 			trust="true" />
 	</target>
