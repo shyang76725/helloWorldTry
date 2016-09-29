@@ -20,6 +20,11 @@
 		<sshexec host="10.1.4.67" keyfile="shyang.pem" username="ubuntu" 
 			command="jmeter -Jjmeter.save.saveservice.output_format=xml -n -t helloGoogle.jmx -l helloGoogleResult.jtl" 
 			trust="true" />
+		<scp 
+							file="ubuntu@10.1.4.67:~/helloGoogle.jtl"
+							todir="."
+							keyfile="shyang.pem" 
+							trust="true" />
 	</target>
 	
 	
