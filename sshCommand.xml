@@ -1,12 +1,7 @@
 <!-- Project Name 可以自定議 -->
-<project name="helloWorldTry" basedir="." >
+<project name="helloWorldTry" basedir=".">
 	<target name="sshTry">
-		<sshexec 
-					host="10.1.4.67" 
-					keyfile="~/OpenstackKey/shyang.pem"
-					username="ubuntu" 
-					command="hostname" 
-					/>  
+		<sshexec host="10.1.4.67" keyfile="~/OpenstackKey/shyang.pem" username="ubuntu" command="hostname" trust="true" />
 	</target>
-	
+
 </project>
