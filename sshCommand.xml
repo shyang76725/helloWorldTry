@@ -21,7 +21,7 @@
 			command="jmeter -Jjmeter.save.saveservice.output_format=xml -n -t helloGoogle.jmx -l helloGoogleResult.jtl" 
 			trust="true" />
 		<scp 
-							file="ubuntu@10.1.4.67:~/helloGoogle.jtl"
+							file="ubuntu@10.1.4.67:~/helloGoogleResult.jtl"
 							todir="."
 							keyfile="shyang.pem" 
 							trust="true" />
