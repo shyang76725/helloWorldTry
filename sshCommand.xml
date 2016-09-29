@@ -1,6 +1,14 @@
 <!-- Project Name 可以自定議 -->
 <project name="helloWorldTry" basedir=".">
-	<target name="sshTry">
+	<target name="setProperties">
+		<property environment="env" />
+		<path id="classpath">
+				<fileset dir="./LIB">
+					<include name="*.jar" />
+				</fileset>
+		</path>
+	</target>
+	<target name="sshTry" depends="setProperties">
 		<sshexec host="10.1.4.67" keyfile="~/OpenstackKey/shyang.pem" username="ubuntu" command="hostname" trust="true" />
 	</target>
 
