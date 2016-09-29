@@ -1,14 +1,14 @@
 <!-- Project Name 可以自定議 -->
 <project name="helloWorldTry" basedir=".">
- 
-	<target name="sshTry" >
-		<!--<sshexec host="10.1.4.67" keyfile="~/openstack_key/shyang.pem" username="ubuntu" command="hostname" trust="true" />-->
-		<!--<sshexec host="172.16.100.4" port="1022" password="ubuntu" username="ubuntu" command="hostname" trust="true" />-->
-		<sshexec host="10.1.4.67" 
-				keyfile="shyang.pem" 
-			username="ubuntu" 
-			command="hostname" 
-			trust="true" />  
-	</target>
 
+	<target name="sshTry">
+		<sshexec host="10.1.4.67" keyfile="shyang.pem" username="ubuntu" command="hostname" trust="true" />
+	</target>
+	<target name="scpTry">
+		<scp 
+			file="helloGoogle.jmx"
+			todir="ubuntu@10.1.4.67:/home"
+			keyfile="shyang.pem" 
+			trust="true" />
+	</target>
 </project>
