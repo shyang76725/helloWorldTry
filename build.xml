@@ -7,7 +7,7 @@
 		<path id="classpath">
 			<!-- 編譯過程當中，需參照的classpath -->
 				<fileset dir="./LIB">
-					<include name="**/*.jar" />
+					<include name="*.jar" />
 				</fileset>
 				<pathelement path="./bin"/>
 		</path>
@@ -34,7 +34,7 @@
 		</javac>
 	</target>
 	<target name="UnitTest" description="" depends="Compiler">
-		<junit printsummary="yes">
+		<junit printsummary="yes" fork="yes" >
 			<classpath refid="classpath" />
  
 			<formatter type="xml" />
