@@ -7,7 +7,7 @@
 		<path id="classpath">
 			<!-- 編譯過程當中，需參照的classpath -->
 				<fileset dir="./LIB">
-					<include name="*.jar" />
+					<include name="**/*.jar" />
 				</fileset>
 				<pathelement path="./bin"/>
 		</path>
