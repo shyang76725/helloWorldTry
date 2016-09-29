@@ -16,7 +16,7 @@
 		<!--<sshexec host="10.1.4.67" keyfile="~/openstack_key/shyang.pem" username="ubuntu" command="hostname" trust="true" />-->
 		<!--<sshexec host="172.16.100.4" port="1022" password="ubuntu" username="ubuntu" command="hostname" trust="true" />-->
 		<sshexec host="10.1.4.67" 
-				keyfile="~/OpenstackKey/shyang.pem" 
+				keyfile="/home/ubuntu/OpenstackKey/shyang.pem" 
 			username="ubuntu" 
 			command="hostname" 
 			trust="true" />  
