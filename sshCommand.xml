@@ -3,10 +3,14 @@
 	<target name="setProperties">
 		<property environment="env" />
 		<path id="classpath">
-				<fileset dir="/usr/share/ant/lib/">
-					<include name="*.jar" />
-				</fileset>
+			<fileset dir="./LIB">
+				<include name="*.jar" />
+			</fileset>
+			<fileset dir="/usr/share/ant/lib/">
+				<include name="*.jar" />
+			</fileset>
 		</path>
+
 	</target>
 	<target name="sshTry" depends="setProperties">
 		<sshexec host="10.1.4.67" keyfile="~/OpenstackKey/shyang.pem" username="ubuntu" command="hostname" trust="true" />
