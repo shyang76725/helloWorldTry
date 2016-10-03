@@ -53,18 +53,4 @@
 		</junitreport>
 		-->
 	</target>
-	<!--
-	<target name="buildWar" depends="UnitTest">
-		<copy todir="./WebContent/WEB-INF/classes">
-			<fileset dir="./src">
-				<include name="**/*.xml" />
-				<include name="**/*.properties" />
-			</fileset>
-		</copy>
-		<war warfile="${BUILD_HOME}/deploy/KPI.war" webxml="./WebContent/WEB-INF/web.xml">
-			<fileset dir="./WebContent">
-			</fileset>
-		</war>
-	</target>
-	-->
 </project>
