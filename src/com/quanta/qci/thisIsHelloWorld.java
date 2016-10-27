@@ -31,5 +31,12 @@ public class thisIsHelloWorld {
 	public String HelloName(String name){
 		return "Hello World "+name;
 	}
-	
+	/**
+	 * This is simple HelloWorld with user input II.
+	 * @param name user input
+	 * @return
+	 */
+	public String HelloName(String name, int old){
+		return "Hello World "+name+", and you are "+old+" years old.";
+	}
 }
